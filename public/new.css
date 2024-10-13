@@ -1,0 +1,40 @@
+
+body{
+    background:#1e1e1e;
+    color: #1e1e1e;
+}
+.container{
+    background-color: white;
+    color: #1e1e1e;
+    padding: 2rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+.Weather-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    border: none;
+    background: #1e1e1e;
+    color: #fff;
+    outline: none;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+input::placeholder{
+    color: #fff;
+}
+.Weather-search{
+    position: relative;
+}
+.Weather-search i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+    color: #fff;
+}

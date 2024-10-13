@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="UTF-8"/>
+     <meta name="viewport" content="width=device-width , initial-scale=1.0"/>   
+     <title> css in html </title>
+     <!--<link rel="stylesheet" href="new.css"/>-->
+     <style>
+        html{
+            font-size: 120%;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+            text-align: center;
+        }
+     </style>
+    </head>
+    <body>
+        <h1 style="font-variant: small-caps; color:red;"> Digtal clock in screen</h1>
+        <di>
+            <p style="font-style: italic; text-transform: capitalize; 
+            border: 10px solid blue;
+            padding: 10px 15px 20px 10px;" >
+            I am learnig new skill and praticse some creating simple<br>
+            that is my staregy in work.
+            </p>
+            <p id="clock" style="border: 5px solid red; color:blueviolet;"> </p>
+        </di>
+
+        <script>
+            const currentime=()=>{
+                let curtime=new Date().toLocaleTimeString();
+                document.getElementById("clock").innerText=curtime;
+            };
+            currentime();
+            setInterval(()=>{
+                currentime();
+
+            },1000
+
+            );
+        </script>
+        <div style="border: 10px solid #1239;
+        border-radius: 50%;
+        border-width: 100px;
+        border-top-width: 15px;
+        margin-top: 50px;">
+
+        </div>
+    
+    </body>
+
+</html>

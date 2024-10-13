@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    </head>
+    <title>Event in Javascript</title>
+    <body>
+        <h1>Inline Event</h1>
+        <button onclick="alert('welcome to my world')">greeting</button>
+        <button ondblclick="alert('thanks')">greet</button>
+        <button onmouseover="alert('thanks for watching')"> greet</button>
+
+        <h1>Dom Events</h1>
+        <button id="btn">greet</button>
+        <button id="btn2">greeting</button>
+        <script>
+            document.getElementById("btn").onclick =function(){
+                alert("welcome to Dom");
+            };
+            document.getElementById("btn2").ondblclick=function(){
+                alert("welcome");
+            };
+        </script>
+    </body>
+</html>

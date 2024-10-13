@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YAY! It's BOGO</h1>
+        
+        <div class="option-box">
+            <input type="radio" id="oneUnit" name="unit" checked>
+            <label for="oneUnit">
+                <div class="option-content">
+                    <h2>1 Unit <span class="discount">10% Off</span></h2>
+                    <p>Standard Price</p>
+                    <p class="price">$10.00 USD <span class="original-price">$24.00 USD</span></p>
+                </div>
+            </label>
+        </div>
+
+        <div class="option-box popular">
+            <input type="radio" id="twoUnits" name="unit">
+            <label for="twoUnits">
+                <div class="option-content">
+                    <h2>2 Unit <span class="discount">20% Off</span></h2>
+                    <p class="price">$18.00 USD <span class="original-price">$24.00 USD</span></p>
+                    <div class="selectors">
+                        <div>
+                            <label>#1</label>
+                            <select>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select>
+                                <option value="Black">Black</option>
+                                <option value="Colour">Colour</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>#2</label>
+                            <select>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select>
+                                <option value="Black">Black</option>
+                                <option value="Colour">Colour</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div class="option-box">
+            <input type="radio" id="threeUnits" name="unit">
+            <label for="threeUnits">
+                <div class="option-content">
+                    <h2>3 Unit <span class="discount">30% Off</span></h2>
+                    <p>Free Delivery</p>
+                    <p class="price">$24.00 USD</p>
+                </div>
+            </label>
+        </div>
+        
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>

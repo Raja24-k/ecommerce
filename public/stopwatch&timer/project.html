@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    </head>
+    <title> Digtal watch</title>
+    <body>
+        <h1 style="background-color: brown; margin-left: 400px;margin-top: 50px;margin-right: 450px;">Stopwatch & Timer</h1>
+        <section style="background-color: aqua; position: absolute;margin-top: 100px;margin-left: 400px;padding: 20px;">
+            <p id="countDown" style="margin-left: 150px;">0</p>
+            <div class="buttons">
+                <button class="start">Start</button>
+                <button class="stop">Stop</button>
+                <button class="reset">Reset</button>
+                <button class="time">Show time</button>
+                <button class="clear">Clear</button>
+
+            </div>
+            <div class="resetvalue"></div>
+        </section>
+        <script>
+            const countDownEle=document.getElementById("countDown");
+            const resetvalueEle=document.querySelector(".resetvalue");
+            let startcount=0;
+            let intervalId;
+            const startTimer=()=>{
+                intervalId= setInterval(()=>{
+                    countDownEle.innerText=startcount++
+                },1000);
+            };
+            const stopTimer=()=>{
+                clearInterval(intervalId);
+            };
+            const resetTimer=()=>{
+                startcount=0;
+                countDownEle.innerText=startcount;
+                clearInterval(intervalId);
+            };
+
+            const showTime=()=>{
+                const newpara=document.createElement("p");
+                newpara.innerText=`The stop time is ${startcount-1}`;
+                resetvalueEle.append(newpara);
+            };
+
+            const clearData=()=>{
+                resetvalueEle.innerHTML="";
+            };
+
+
+            document.querySelector(".start").addEventListener("click",startTimer);
+            document.querySelector(".stop").addEventListener("click",stopTimer);
+            document.querySelector(".reset").addEventListener("click",resetTimer);
+            document.querySelector(".time").addEventListener("click",showTime);
+            document.querySelector(".clear").addEventListener("click",clearData);
+        </script>
+    </body>
+</html>
