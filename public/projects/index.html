@@ -1,75 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Options</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printlet Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
+  <header>
     <div class="container">
-        <h1>YAY! It's BOGO</h1>
-        
-        <div class="option-box">
-            <input type="radio" id="oneUnit" name="unit" checked>
-            <label for="oneUnit">
-                <div class="option-content">
-                    <h2>1 Unit <span class="discount">10% Off</span></h2>
-                    <p>Standard Price</p>
-                    <p class="price">$10.00 USD <span class="original-price">$24.00 USD</span></p>
-                </div>
-            </label>
-        </div>
-
-        <div class="option-box popular">
-            <input type="radio" id="twoUnits" name="unit">
-            <label for="twoUnits">
-                <div class="option-content">
-                    <h2>2 Unit <span class="discount">20% Off</span></h2>
-                    <p class="price">$18.00 USD <span class="original-price">$24.00 USD</span></p>
-                    <div class="selectors">
-                        <div>
-                            <label>#1</label>
-                            <select>
-                                <option value="S">S</option>
-                                <option value="M">M</option>
-                                <option value="L">L</option>
-                            </select>
-                            <select>
-                                <option value="Black">Black</option>
-                                <option value="Colour">Colour</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label>#2</label>
-                            <select>
-                                <option value="S">S</option>
-                                <option value="M">M</option>
-                                <option value="L">L</option>
-                            </select>
-                            <select>
-                                <option value="Black">Black</option>
-                                <option value="Colour">Colour</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </label>
-        </div>
-
-        <div class="option-box">
-            <input type="radio" id="threeUnits" name="unit">
-            <label for="threeUnits">
-                <div class="option-content">
-                    <h2>3 Unit <span class="discount">30% Off</span></h2>
-                    <p>Free Delivery</p>
-                    <p class="price">$24.00 USD</p>
-                </div>
-            </label>
-        </div>
-        
-        <button class="add-to-cart">Add to Cart</button>
+      <div class="logo">Printlet</div>
+      <nav>
+        <ul>
+          <li><a href="#custom-sell">Custom & Sell</a></li>
+          <li><a href="#start-selling">Start Selling</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
     </div>
-   <script src="script.js"></script>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="custom-sell" class="hero">
+    <div class="text-content">
+      <h1>Custom & Sell</h1>
+      <p>Customize your product and ship directly to your customer or to yourself.</p>
+      <button onclick="handleAction('customize')">Customize Now</button>
+    </div>
+    <div class="image">
+      <img src="/home/raja/Pictures/Screenshots/Screenshot from 2024-12-06 19-16-22.png" alt="Custom & Sell">
+    </div>
+  </section>
+
+  <!-- Kids Wear Section -->
+  <section id="start-selling" class="kids-wear">
+    <div class="image">
+      <img src="/home/raja/Pictures/Screenshots/Screenshot from 2024-12-06 19-21-59.png" alt="Kids Wear">
+    </div>
+    <div class="text-content">
+      <h1>Start Selling Kids Wear</h1>
+      <p>More products to come. You Sell, We Fulfill.</p>
+      <button onclick="handleAction('startSelling')">Learn More</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1>About Printlet</h1>
+    <p>Printlet is a Print-on-Demand platform that helps people turn their ideas into brands.</p>
+    <p>Whether you wish to create your own brand or customize a product for your company or event, we can help you get it done.</p>
+    <div class="image">
+      <img src="/home/raja/Pictures/Screenshots/Screenshot from 2024-12-06 19-26-13.png" alt="About Printlet">
+    </div>
+    <button onclick="handleAction('about')">Discover More</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Printlet. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
